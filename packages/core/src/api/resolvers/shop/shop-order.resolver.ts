@@ -310,7 +310,7 @@ export class ShopOrderResolver {
             order.id,
             args.productVariantId,
             args.quantity,
-            (args as any).customFields,
+            args.customFields,
             relations,
         );
     }
@@ -337,7 +337,7 @@ export class ShopOrderResolver {
             order.id,
             args.orderLineId,
             args.quantity,
-            (args as any).customFields,
+            args.customFields,
             relations,
         );
     }
@@ -384,7 +384,6 @@ export class ShopOrderResolver {
             args[ACTIVE_ORDER_INPUT_FIELD_NAME],
             true,
         );
-        return this.orderService.applyCouponCode(ctx, order.id, args.couponCode);
         return this.orderService.applyCouponCode(ctx, order.id, args.couponCode);
     }
 

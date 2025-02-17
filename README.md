@@ -95,7 +95,7 @@ If you are making changes to the admin ui, you need to start the admin ui indepe
 
 1. `cd packages/admin-ui`
 2. `npm run start`
-3. Go to http://localhost:4200 and log in with "superadmin", "superadmin"
+3. Go to http://localhost:4200 and log in with username "superadmin" and password "superadmin"
 
 This will auto restart when you make changes to the admin ui. You don't need this step when you just use the admin ui just
 to test backend changes.
